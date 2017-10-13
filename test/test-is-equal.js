@@ -17,8 +17,11 @@ describe('isEqual', function() {
       const answer = isEqual(input[0], input[1]);
       // use `chai.should`'s keywords to set expectations for
       // `isEqual`'s behavior
+     
       answer.should.be.true;
     });
+    const answer2 = isEqual(2, 5);
+    answer2.should.be.true;
 
     // range of inputs that the function should return false for
     const unequalInputs = [
@@ -34,4 +37,12 @@ describe('isEqual', function() {
     });
   });
 }
+
 );
+
+describe('isEqual', function() {
+  it('test 2', function() {
+    const answer2 = isEqual(2, 5);
+    answer2.should.be.true;
+  });
+});
